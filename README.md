@@ -1,4 +1,8 @@
 # push_swap  
+# algoritms  
+https://www.youtube.com/watch?v=4s-aG6yGGLU  
+https://www.youtube.com/watch?v=SLauY6PpjW4&t=110s  
+
 # useful links:  
 https://m.vk.com/@forum42intra-push-swap  
 https://github.com/VBrazhnik/Push_swap/wiki/Algorithm  
