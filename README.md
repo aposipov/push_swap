@@ -18,6 +18,9 @@ becomes the first one.
 rrb : reverse rotate b - shift down all elements of stack b by 1. The last element
 becomes the first one.  
 rrr : rra and rrb at the same time.  
+  
+quicksort  
+radix  
 # algoritms  
 https://www.youtube.com/watch?v=4s-aG6yGGLU  
 https://www.youtube.com/watch?v=SLauY6PpjW4&t=110s  
