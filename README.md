@@ -25,7 +25,7 @@ radix
 https://www.youtube.com/watch?v=4s-aG6yGGLU  
 https://www.youtube.com/watch?v=SLauY6PpjW4&t=110s  
   
-https://www.youtube.com/watch?v=KeDXVukgd9g  
+https://www.youtube.com/watch?v=KeDXVukgd9g  lajudy  
   
 # useful links:  
 https://m.vk.com/@forum42intra-push-swap  
