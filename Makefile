@@ -13,26 +13,36 @@
 NAME = push_swap
 CC = gcc
 FLAGS = -Wall -Wextra -Werror
-HEADER = push_swap.h
+HEADER = ./inc/push_swap.h
 
-SRC =
+SRC = ./src/push_swap.c ./src/ft_error.c ./src/ft_split.c ./src/utils_lib.c
 OBJ = ${patsubst %.c,%.o,${SRC}}
 RM = rm -f
+
+RED='\033[4;31m'
+GREEN='\033[4;32m'
+NC='\033[0;0m'
+
 
 all:		${NAME}
 
 ${NAME}:	${OBJ}
-			ar rcs ${NAME} $?
+			$(CC) $(FLAGS) $(FLAGS_M) $(OBJ) -o $(NAME)
 
 %.o : %.c	Makefile ${HEADER}
 			${CC} ${FLAGS} -c $< -o $@
 
 clean:
 			${RM} ${OBJ}
+			@echo $(RED) *.o files is clean!$(NC)
 
-fclean:	clean
+fclean:		clean
 			${RM} ${NAME}
+			@echo $(GREEN)all files is clean!$(NC)
 
-re: fclean all
+re: 		fclean all
 
-.PHONY: all clean fclean re
+norm:
+			norminette $(SRC) $(HEADER)
+
+.PHONY: all clean fclean re norm

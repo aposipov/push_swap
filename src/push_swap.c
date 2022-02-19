@@ -11,9 +11,29 @@
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
+#include <stdio.h>
 
 int	main(int argc, char **argv)
 {
-	if (argc < 2)
+	t_data	*vars;
+	char **line = NULL;
+
+	vars = malloc(sizeof(t_data));
+	if (!vars)
 		return (0);
+	if (argc == 1)
+		ft_error();
+	if (argc == 2)
+		vars->line = ft_split(argv[1], ' ');
+
+//	if (argc > 2);
+//		ft_parsing();
+	while(*line != NULL)
+	{
+		printf("line = %s\n", vars->line);
+		vars->line++;
+	}
+
+
+	return(0);
 }
