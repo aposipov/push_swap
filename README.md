@@ -25,7 +25,8 @@ radix
 https://www.youtube.com/watch?v=4s-aG6yGGLU  
 https://www.youtube.com/watch?v=SLauY6PpjW4&t=110s  
   
-https://www.youtube.com/watch?v=KeDXVukgd9g  lajudy  
+https://www.youtube.com/watch?v=KeDXVukgd9g  @lajudy  
+https://www.youtube.com/watch?v=98r9uhjPveE  @einterdi  
   
 # useful links:  
 https://github.com/o-reo/push_swap_visualizer visualizator  
