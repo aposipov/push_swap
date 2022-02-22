@@ -28,6 +28,7 @@ https://www.youtube.com/watch?v=SLauY6PpjW4&t=110s
 https://www.youtube.com/watch?v=xp4DUxGUggU  @acami @wdawna  
 https://www.youtube.com/watch?v=KeDXVukgd9g  @lajudy  
 https://www.youtube.com/watch?v=98r9uhjPveE  @einterdi  
+https://www.youtube.com/watch?v=GA9aKzl86nA  @edu_events_mow 
 https://www.youtube.com/watch?v=7KW59UO55TQ  john park    
 
 # useful links:  
