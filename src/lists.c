@@ -20,3 +20,28 @@ void	ft_lstadd_front(t_test **lst, int num)
 	front->next = *lst;
 	*lst = front;
 }
+
+t_test	*ft_lstlast(t_test *lst)
+{
+	if (!lst)
+		return (NULL);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
+}
+
+void	ft_lstadd_back(t_test **lst, int num)
+{
+	t_test	*tmp;
+
+	if (!lst || !num)
+		return ;
+	if (!*lst)
+	{
+		*lst = num;
+		return ;
+	}
+	tmp = ft_lstlast(*lst);
+	tmp->next = new; //
+}
+
