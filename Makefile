@@ -16,6 +16,8 @@ FLAGS = -Wall -Wextra -Werror
 HEADER = ./inc/push_swap.h
 
 SRC = ./src/push_swap.c ./src/ft_error.c ./src/ft_split.c ./src/utils_lib.c
+
+
 OBJ = ${patsubst %.c,%.o,${SRC}}
 RM = rm -f
 
@@ -38,7 +40,7 @@ clean:
 
 fclean:		clean
 			${RM} ${NAME}
-			@echo $(GREEN)all files is clean!$(NC)
+			@echo $(GREEN)All files is clean!$(NC)
 
 re: 		fclean all
 
