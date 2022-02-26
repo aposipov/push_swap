@@ -36,4 +36,6 @@ https://github.com/o-reo/push_swap_visualizer visualizator
 https://m.vk.com/@forum42intra-push-swap  
 https://github.com/VBrazhnik/Push_swap/wiki/Algorithm  
 https://medium.com/nerd-for-tech/push-swap-tutorial-fa746e6aba1e  
+
+https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P еще раз про структуры и листы плейлист  
  
