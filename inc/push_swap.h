@@ -55,8 +55,13 @@ size_t	ft_strlen(const char *str);
 char	*ft_strjoin(char *str1, char *str2);
 char	**ft_split(char const *s, char c);
 
+/* lists */
 t_test	*ft_lstnew(int num);
 void	ft_lstadd_front(t_test **lst, int num);
+void	ft_lstadd_back(t_test **lst, int num);
+int		ft_lstsize(t_test *lst);
+void	lst_print(t_test *head);
+t_test	*ft_lstlast(t_test *lst);
 
 /* instruction */
 void	ft_sa(t_stack *head_a);

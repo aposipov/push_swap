@@ -1,17 +1,18 @@
 
 
 #include "../inc/push_swap.h"
+#include <stdio.h>
 
 t_test	*ft_lstnew(int num)
 {
-	t_test	*stack;
+	t_test	*lst;
 
-	stack = malloc(sizeof(t_test));
-	if (!stack)
+	lst = malloc(sizeof(t_test));
+	if (!lst)
 		return (NULL);
-	stack->num = num;
-	stack->next = NULL;
-	return (stack);
+	lst->num = num;
+	lst->next = NULL;
+	return (lst);
 }
 
 void	ft_lstadd_front(t_test **lst, int num)
@@ -32,16 +33,43 @@ t_test	*ft_lstlast(t_test *lst)
 
 void	ft_lstadd_back(t_test **lst, int num)
 {
-	t_test	*tmp;
+	t_test	*tmp = NULL;
+	tmp = (t_test*) malloc(sizeof(t_test));
 
 	if (!lst || !num)
 		return ;
 	if (!*lst)
 	{
-		*lst = num;
+		*lst = tmp;
 		return ;
 	}
 	tmp = ft_lstlast(*lst);
-	tmp->next = new; //
+	tmp->next = *lst;
+	*lst = tmp;
 }
 
+int	ft_lstsize(t_test *lst)
+{
+	int	n;
+
+	n = 0;
+	if (!lst)
+		return (n);
+	while (lst != NULL)
+	{
+		lst = lst->next;
+		n++;
+	}
+	return (n);
+}
+
+void	lst_print(t_test *head)
+{
+	t_test *curr = head;
+
+	while(curr->num != 0)
+	{
+		printf("%d ", curr->num);
+	}
+
+}

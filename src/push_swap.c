@@ -20,8 +20,12 @@ int	main(int argc, char **argv)
 	int i = 1;
 	int j = 0;
 	int	test;
+
 	t_test *stack_a = NULL;
-	stack_a = malloc(sizeof(t_test));
+//	stack_a =(t_test*) malloc(sizeof(t_test));
+	stack_a = ft_lstnew(stack_a);
+	if(!stack_a)
+		return(NULL);
 
 
 //	if (!str)
@@ -38,6 +42,7 @@ int	main(int argc, char **argv)
 //			test = malloc(sizeof(int *));
 			test = ft_atoi(str[i]);
 			ft_lstadd_front(&stack_a, test);
+			//ft_lstadd_back(&stack_a, test);
 			//printf("test %d\n", test[i]);
 			printf("line==2 %d\n", ft_atoi(str[i]));
 			i++;
@@ -59,14 +64,18 @@ int	main(int argc, char **argv)
 		}
 	}
 
-	printf("list %d\n", stack_a->num);
-	printf("list %d\n", stack_a->next->num);
-	printf("list %d\n", stack_a->next->next->num);
-//	while(stack_a->next != NULL)
-//	{
-//		printf("list %d\n", stack_a->num);
-//		stack_a = stack_a->next;
-//	}
+	//lst_print(stack_a);
+	//ft_lstlast(stack_a);
+	//	printf("size %d\n", ft_lstsize(&stack_a));
+//	printf("list %d\n", stack_a->num);
+//	printf("list %d\n", stack_a->next->num);
+//	printf("list %d\n", stack_a->next->next->num);
+
+	while(stack_a->next != NULL)
+	{
+		printf("list %d\n", stack_a->num);
+		stack_a = stack_a->next;
+	}
 
 	return(0);
 }
