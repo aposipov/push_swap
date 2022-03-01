@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/push_swap.h"
+#include "../inc/push_swap2.h"
 #include <stdio.h>
 
 int	main(int argc, char **argv)
