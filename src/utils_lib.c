@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/push_swap2.h"
+#include "../inc/push_swap.h"
 
 int	ft_atoi(const char *nptr)
 {

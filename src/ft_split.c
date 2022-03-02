@@ -1,6 +1,6 @@
 
 
-#include "../inc/push_swap2.h"
+#include "../inc/push_swap.h"
 
 static char	**ft_clear(char **tab)
 {

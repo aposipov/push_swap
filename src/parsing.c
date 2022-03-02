@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/push_swap2.h"
+#include "../inc/push_swap.h"
 
 char	ft_parsing(char	**argv)
 {

@@ -1,7 +1,7 @@
 
 
 
-#include "../inc/push_swap2.h"
+#include "../inc/push_swap.h"
 
 void	ft_pa(t_stack **stack_a, t_stack **stack_b)
 {

@@ -1,6 +1,6 @@
 
 
-#include "../inc/push_swap2.h"
+#include "../inc/push_swap.h"
 #include <stdio.h>
 
 t_test	*ft_lstnew(int num)
