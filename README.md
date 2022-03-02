@@ -40,6 +40,6 @@ https://medium.com/nerd-for-tech/push-swap-tutorial-fa746e6aba1e
 https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P еще раз про структуры и листы плейлист  
 
 # testers:
-  
+https://github.com/lmalki-h/push_swap_tester  
 https://github.com/LeoFu9487/push_swap_tester  
  
