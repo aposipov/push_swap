@@ -21,6 +21,9 @@ rrr : rra and rrb at the same time.
   
 quicksort  
 radix  
+  
+leaks --atExit -- ./push_swap  
+
 # algoritms  
 https://www.youtube.com/watch?v=4s-aG6yGGLU  
 https://www.youtube.com/watch?v=SLauY6PpjW4&t=110s  
