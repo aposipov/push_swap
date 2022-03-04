@@ -46,3 +46,4 @@ https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P еще 
 https://github.com/lmalki-h/push_swap_tester  
 https://github.com/LeoFu9487/push_swap_tester  
  
+https://github.com/o-reo/push_swap_visualizer  visualizer
