@@ -3,48 +3,61 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lchristi <lchristi@student.42.fr>          +#+  +:+       +#+         #
+#    By: lchristi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/12/27 17:58:54 by lchristi          #+#    #+#              #
-#    Updated: 2021/12/27 17:58:57 by lchristi         ###   ########.fr        #
+#    Created: 2022/03/03 17:31:37 by lchristi          #+#    #+#              #
+#    Updated: 2022/03/03 17:31:42 by lchristi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
-CC = gcc
+CC = cc
 FLAGS = -Wall -Wextra -Werror
-HEADER = ./inc/push_swap.h
+HEADER = push_swap.h
 
-SRC = ./src/push_swap.c ./src/ft_error.c ./src/ft_split.c ./src/utils_lib.c
+libft_ = libft/libft.a
 
+SRCS =	check.c\
+		push_swap.c\
+		ins_s_p.c\
+		ins_r.c\
+		ins_rr.c\
+		utils.c\
+		sorting.c\
+		index.c\
+		sorting_utils.c
 
-OBJ = ${patsubst %.c,%.o,${SRC}}
-RM = rm -f
+OBJ = $(patsubst %.c, %.o, $(SRCS))
 
 RED='\033[4;31m'
-GREEN='\033[4;32m'
+GREEN='\033[0;32m'
 NC='\033[0;0m'
 
+.PHONY:	all clean fclean re norm libft
 
-all:		${NAME}
+all:	$(NAME)
 
-${NAME}:	${OBJ}
-			$(CC) $(FLAGS) $(FLAGS_M) $(OBJ) -o $(NAME)
+$(NAME):	$(OBJ) $(libft_)
+			$(CC) $(FLAGS) $(OBJ) $(libft_) -o $(NAME)
+			@echo $(GREEN)Pushswap compiled!$(NC)
 
-%.o : %.c	Makefile ${HEADER}
-			${CC} ${FLAGS} -c $< -o $@
+%.o : %.c 	Makefile $(HEADER)
+			$(CC) $(FLAGS) -c $< -o $@
+
+$(libft_):	libft
+			make -C libft
 
 clean:
-			${RM} ${OBJ}
+			rm -f $(OBJ)
+			make -C libft clean
 			@echo $(RED) *.o files is clean!$(NC)
 
 fclean:		clean
-			${RM} ${NAME}
-			@echo $(GREEN)All files is clean!$(NC)
+			rm -f $(NAME)
+			make -C libft fclean
+			@echo $(RED)All files is clean!$(NC)
 
-re: 		fclean all
+re:			fclean all
 
 norm:
-			norminette $(SRC) $(HEADER)
-
-.PHONY: all clean fclean re norm
+			@norminette $(HEADER) $(SRCS) libft

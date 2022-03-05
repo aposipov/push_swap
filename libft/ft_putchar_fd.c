@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_erorr.c                                         :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lchristi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lchristi <lchristi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/19 16:39:59 by lchristi          #+#    #+#             */
-/*   Updated: 2022/02/19 16:40:02 by lchristi         ###   ########.fr       */
+/*   Created: 2021/10/13 19:34:16 by lchristi          #+#    #+#             */
+/*   Updated: 2021/10/26 19:50:15 by lchristi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/push_swap.h"
+#include "libft.h"
 
-void	ft_error(int i)
+void	ft_putchar_fd(char c, int fd)
 {
-	if (i == 1)
-		write(1, "Error\n", 6);
-	if (i == 2)
-		write(1, "Error test\n", 15);
+	write(fd, &c, 1);
 }

@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parsing.c                                          :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lchristi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lchristi <lchristi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/19 16:40:12 by lchristi          #+#    #+#             */
-/*   Updated: 2022/02/19 16:40:15 by lchristi         ###   ########.fr       */
+/*   Created: 2021/10/14 17:25:52 by lchristi          #+#    #+#             */
+/*   Updated: 2021/11/01 17:07:45 by lchristi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/push_swap.h"
+#include "libft.h"
 
-char	ft_parsing(char	**argv)
+int	ft_lstsize(t_list *lst)
 {
-	int i;
+	int	n;
 
-	i = 0;
-	while (*argv[i] != 0)
+	n = 0;
+	if (!lst)
+		return (n);
+	while (lst)
+	{
+		lst = lst->next;
+		n++;
+	}
+	return (n);
 }

@@ -1,6 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lchristi <lchristi@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/13 13:46:49 by lchristi          #+#    #+#             */
+/*   Updated: 2021/11/02 13:28:55 by lchristi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-
-#include "../inc/push_swap.h"
+#include "libft.h"
 
 static char	**ft_clear(char **tab)
 {
@@ -38,28 +48,7 @@ static size_t	ft_count_words(const char *str, char c)
 		i++;
 	}
 	return (count);
-}
-
-char	*ft_substr(char const *s, unsigned int start, size_t len)
-{
-	char	*str;
-	size_t	i;
-
-	if (!s)
-		return (NULL);
-	i = 0;
-	if (ft_strlen(s) < start)
-		len = 0;
-	if (len > ft_strlen(s) - start)
-		len = ft_strlen(s) - start;
-	str = malloc(len + 1);
-	if (!str)
-		return (NULL);
-	while (i < len)
-		str[i++] = s[start++];
-	str[i] = '\0';
-	return (str);
-}
+}	
 
 char	**ft_split(char const *s, char c)
 {

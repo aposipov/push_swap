@@ -1,7 +1,12 @@
 cmake_minimum_required(VERSION 3.21)
-project(push_swap C)
+project(PS2 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(push_swap src/push_swap.c
-        src/ft_error.c src/ft_split.c src/utils_lib.c src/lists.c src/swap.c src/push.c)
+include_directories(./libft)
+add_subdirectory(./libft)
+
+add_executable(PS2 index.c ins_r.c ins_rr.c ins_s_p.c
+        check.c push_swap.c sorting.c sorting_utils.c utils.c)
+
+target_link_libraries(PS2 libft)
